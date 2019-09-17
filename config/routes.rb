@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'articles#index'
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 end
-
-# this file seems to be like urls.py
